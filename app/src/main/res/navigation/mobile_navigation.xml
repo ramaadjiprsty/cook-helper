@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/findRecipeFragment">
+    <fragment
+        android:id="@+id/findRecipeFragment"
+        android:name="com.example.cookhelper.views.findrecipe.FindRecipeFragment"
+        android:label="fragment_find_recipe"
+        tools:layout="@layout/fragment_find_recipe" />
+    <fragment
+        android:id="@+id/getRecipeFragment"
+        android:name="com.example.cookhelper.views.getrecipe.GetRecipeFragment"
+        android:label="fragment_get_recipe"
+        tools:layout="@layout/fragment_get_recipe">
+        <action
+            android:id="@+id/action_getRecipeFragment_to_detailRecipeFragment"
+            app:destination="@id/detailRecipeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailRecipeFragment"
+        android:name="com.example.cookhelper.views.detailrecipe.DetailRecipeFragment"
+        android:label="DetailRecipeFragment"
+        tools:layout="@layout/fragment_detail_recipe">
+        <argument
+            android:name="imageRecipe"
+            app:argType="integer" />
+        <argument
+            android:name="nameRecipe"
+            app:argType="string" />
+        <argument
+            android:name="ingredients"
+            app:argType="string" />
+        <argument
+            android:name="instructions"
+            app:argType="string" />
+    </fragment>
+</navigation>
