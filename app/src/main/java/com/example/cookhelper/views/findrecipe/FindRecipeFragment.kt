@@ -34,14 +34,6 @@ class FindRecipeFragment : Fragment() {
         apiKey = BuildConfig.API_KEY
     )
 
-    private val viewModel: FindRecipeViewModel by viewModels()
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        // TODO: Use the ViewModel
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -71,7 +63,7 @@ class FindRecipeFragment : Fragment() {
                 val response = generativeModel.generateContent(
                     content {
                         image(uriToBitmap())
-                        text("Bahan apa saja yang tersedia di gambar ini?, dan juga berikan aku resep berdasarkan bahan-bahan dari gambar diatas dan cara membuatnya")
+                        text(requireContext().getString(R.string.promptText))
                     }
                 )
                 binding.progressBar.visibility = View.GONE

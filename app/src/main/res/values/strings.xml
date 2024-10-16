@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Cook Helper</string>
+    <string name="promptText">"Bahan apa saja yang tersedia di gambar ini?, dan juga berikan aku resep berdasarkan bahan-bahan dari gambar diatas dan cara membuatnya"</string>
 </resources>
