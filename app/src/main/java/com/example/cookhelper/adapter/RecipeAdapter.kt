@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.cookhelper.R
 import com.example.cookhelper.data.Recipe
 import com.example.cookhelper.databinding.ItemListRecipeBinding
-import com.example.cookhelper.views.getrecipe.GetRecipeFragment
 import com.example.cookhelper.views.getrecipe.GetRecipeFragmentDirections
 
 class RecipeAdapter(private val recipe: List<Recipe>) : RecyclerView.Adapter<RecipeAdapter.ListViewHolder>() {
