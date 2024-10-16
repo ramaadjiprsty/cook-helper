@@ -6,4 +6,9 @@
     </style>
 
     <style name="Theme.CookHelper" parent="Base.Theme.CookHelper" />
+
+    <style name="Theme.CookHelper.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+    </style>
+
 </resources>

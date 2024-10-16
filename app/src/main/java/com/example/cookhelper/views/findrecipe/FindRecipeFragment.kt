@@ -17,7 +17,6 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.lifecycle.lifecycleScope
 import com.example.cookhelper.BuildConfig
-import com.example.cookhelper.R
 import com.example.cookhelper.databinding.FragmentFindRecipeBinding
 import com.example.cookhelper.utils.getImageUri
 import com.google.ai.client.generativeai.GenerativeModel

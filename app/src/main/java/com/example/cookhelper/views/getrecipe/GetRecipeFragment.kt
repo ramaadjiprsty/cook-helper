@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.cookhelper.R
 import com.example.cookhelper.adapter.RecipeAdapter
 import com.example.cookhelper.data.RecipeData
 import com.example.cookhelper.databinding.FragmentGetRecipeBinding
