@@ -17,6 +17,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.lifecycle.lifecycleScope
 import com.example.cookhelper.BuildConfig
+import com.example.cookhelper.R
 import com.example.cookhelper.databinding.FragmentFindRecipeBinding
 import com.example.cookhelper.utils.getImageUri
 import com.google.ai.client.generativeai.GenerativeModel
@@ -70,8 +71,7 @@ class FindRecipeFragment : Fragment() {
                 val response = generativeModel.generateContent(
                     content {
                         image(uriToBitmap())
-                        text("Bahan apa saja yang tersedia di gambar ini?, dan juga berikan aku resep berdasarkan bahan-bahan dari gambar diatas dan cara membuatnya")
-                    }
+                        text(requireContext().getString(R.string.promptText))                    }
                 )
                 binding.progressBar.visibility = View.GONE
                 binding.tvResult.text = response.text.toString()
