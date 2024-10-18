@@ -11,11 +11,12 @@
     <ImageView
         android:id="@+id/iv_foodMaterial"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
         android:contentDescription="Food Material"
         android:layout_marginTop="48dp"
+        android:layout_marginHorizontal="32dp"
         android:src="@drawable/photo_gallery"
-        android:tooltipText="Add Food Material"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
