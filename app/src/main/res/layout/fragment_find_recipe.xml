@@ -5,82 +5,85 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/foodbg"
     tools:context=".views.findrecipe.FindRecipeFragment">
 
-    <androidx.core.widget.NestedScrollView
+    <ImageView
+        android:id="@+id/iv_foodMaterial"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="400dp"
+        android:contentDescription="Food Material"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/photo_gallery"
+        android:tooltipText="Add Food Material"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_camera"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="32dp"
+        android:text="Camera"
+        app:cornerRadius="8dp"
+        app:icon="@drawable/baseline_camera_alt_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:iconTint="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/iv_foodMaterial"
+        android:backgroundTint="@color/button"
+        android:textColor="@color/black"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_gallery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="32dp"
+        android:text="Gallery"
+        app:cornerRadius="8dp"
+        app:icon="@drawable/baseline_folder_24"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_camera"
+        android:backgroundTint="@color/button"
+        android:textColor="@color/black"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_generate"
+        android:layout_gravity="center"
+        app:cornerRadius="8dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/btn_gallery"
+        android:backgroundTint="@color/button"
+        android:textColor="@color/black"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp"
+        android:text="Generate"/>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/iv_foodMaterial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_gravity="center"/>
 
-            <ImageView
-                android:id="@+id/iv_foodMaterial"
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:contentDescription="Food Material"
-                android:src="@drawable/baseline_add_photo_alternate_24"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_camera"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="32dp"
-                android:text="Camera"
-                app:cornerRadius="8dp"
-                app:icon="@drawable/baseline_camera_alt_24"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/iv_foodMaterial" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_gallery"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="32dp"
-                android:text="Gallery"
-                app:cornerRadius="8dp"
-                app:icon="@drawable/baseline_folder_24"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/btn_camera" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_generate"
-                android:layout_gravity="center"
-                app:cornerRadius="8dp"
-                android:layout_marginHorizontal="32dp"
-                android:layout_marginTop="64dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/btn_gallery"
-                android:text="Generate"/>
-
-            <TextView
-                android:id="@+id/tv_result"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                app:layout_constraintTop_toBottomOf="@id/iv_foodMaterial"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_gravity="center"/>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.core.widget.NestedScrollView>
     <ProgressBar
         android:id="@+id/progressBar"
         android:visibility="gone"
