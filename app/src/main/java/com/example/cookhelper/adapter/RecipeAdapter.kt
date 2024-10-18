@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation.findNavController
+import androidx.navigation.navOptions
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cookhelper.R
 import com.example.cookhelper.data.Recipe
@@ -34,7 +35,15 @@ class RecipeAdapter(private val recipe: List<Recipe>) : RecyclerView.Adapter<Rec
                     ingredients = data.ingredients,
                     instructions = data.instructions
                 )
-                findNavController(it).navigate(action)
+                val options = navOptions {
+                    anim {
+                        enter = R.anim.slide_in_right
+                        exit = R.anim.slide_out_left
+                        popEnter = R.anim.slide_in_left
+                        popExit = R.anim.slide_out_right
+                    }
+                }
+                findNavController(it).navigate(action, options)
             }
         }
     }

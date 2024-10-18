@@ -73,7 +73,7 @@
         android:textColor="@color/black"
         app:strokeColor="@color/black"
         app:strokeWidth="1dp"
-        android:text="Generate"/>
+        android:text="Find Recipe"/>
 
     <TextView
         android:id="@+id/tv_result"

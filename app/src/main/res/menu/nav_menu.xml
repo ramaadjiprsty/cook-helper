@@ -6,7 +6,11 @@
         android:id="@+id/findRecipeFragment"
         android:icon="@drawable/baseline_home_filled_24"/>
     <item
-        android:title="Timeline"
+        android:title="Recommendation"
         android:id="@+id/getRecipeFragment"
-        android:icon="@drawable/baseline_search_24"/>
+        android:icon="@drawable/baseline_recommend_24"/>
+    <item
+        android:title="About"
+        android:id="@+id/aboutFragment"
+        android:icon="@drawable/baseline_info_24" />
 </menu>

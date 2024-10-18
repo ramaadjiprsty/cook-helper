@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
                 R.id.resultRecipeFragment -> navView.visibility = View.GONE
+                R.id.detailRecipeFragment -> navView.visibility = View.GONE
                 else -> navView.visibility = View.VISIBLE
             }
         }
