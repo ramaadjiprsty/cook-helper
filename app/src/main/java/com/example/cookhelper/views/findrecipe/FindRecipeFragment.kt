@@ -16,6 +16,8 @@ import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.findNavController
+import androidx.navigation.navOptions
 import com.example.cookhelper.BuildConfig
 import com.example.cookhelper.R
 import com.example.cookhelper.databinding.FragmentFindRecipeBinding
@@ -68,8 +70,7 @@ class FindRecipeFragment : Fragment() {
                 )
                 binding.progressBar.visibility = View.GONE
                 binding.tvResult.text = response.text.toString()
-                binding.btnGenerate.visibility = View.GONE
-                dismissButton()
+                navigateToResultFragment(binding.root, currentImageUri!!, response.text.toString())
             }
         }
 
@@ -113,20 +114,26 @@ class FindRecipeFragment : Fragment() {
         }
     }
 
-    private fun dismissButton() {
-        binding.btnGenerate.visibility = View.GONE
-        binding.btnGallery.visibility = View.GONE
-        binding.btnCamera.visibility = View.GONE
-    }
-
     private fun startCamera() {
         currentImageUri = getImageUri(requireContext())
         launcherIntentCamera.launch(currentImageUri!!)
     }
 
+    private fun navigateToResultFragment(view: View, imageUri: Uri, text: String) {
+        val action = FindRecipeFragmentDirections.actionFindRecipeFragmentToResultRecipeFragment(imageUri.toString(), text)
+        val options = navOptions {
+            anim {
+                enter = R.anim.slide_in_right
+                exit = R.anim.slide_out_left
+                popEnter = R.anim.slide_in_left
+                popExit = R.anim.slide_out_right
+            }
+        }
+        view.findNavController().navigate(action, options)
+    }
+
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
-
     }
 }

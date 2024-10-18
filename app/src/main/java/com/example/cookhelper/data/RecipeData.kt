@@ -69,6 +69,112 @@ object RecipeData {
                     "6. Masukkan daun bawang, dan sisa paprika.\n" +
                     "7. aduk rata, masak kembali beberapa saat, matikan api.\n" +
                     "8. Angkat, dan sajikan dalam piring saji.\n"
+        ),
+        Recipe(
+            R.drawable.rawon,
+            "Rawon",
+            "500 gram daging sapi (sandung lamur), potong dadu\n" +
+                    "2 liter air\n" +
+                    "3 sendok makan minyak goreng\n" +
+                    "2 batang serai, memarkan\n" +
+                    "4 lembar daun jeruk\n" +
+                    "2 lembar daun salam\n" +
+                    "Garam secukupnya\n" +
+                    "Merica secukupnya\n" +
+                    "1 sendok teh gula merah (opsional)\n +" +
+                    "6 siung bawang merah\n" +
+                    "4 siung bawang putih\n" +
+                    "3 butir kemiri\n" +
+                    "2 cm jahe\n" +
+                    "2 cm kunyit (atau 1 sendok teh kunyit bubuk)\n" +
+                    "5 butir kluwak (rendam dalam air panas)",
+            "1. Rebus daging dalam air hingga empuk, angkat dan tiriskan.\n" +
+                    "2. Tumis bumbu halus dengan minyak hingga harum, tambahkan serai, daun jeruk, dan daun salam.\n" +
+                    "3. Masukkan daging ke dalam tumisan, tuang kaldu yang disisihkan, dan masak hingga mendidih.\n" +
+                    "4. Bumbui dengan garam, merica, dan gula merah. Masak selama 30 menit.\n" +
+                    "5. Sajikan panas dengan pelengkap."
+        ),
+        Recipe(
+            R.drawable.gulai_daging,
+            "Gulai Daging",
+            "500 gram daging sapi, potong dadu\n" +
+                    "1 liter santan (dari 1 butir kelapa)\n" +
+                    "2 sendok makan minyak goreng\n" +
+                    "2 batang serai, memarkan\n" +
+                    "4 lembar daun jeruk\n" +
+                    "2 lembar daun salam\n" +
+                    "Garam secukupnya\n" +
+                    "Merica secukupnya\n" +
+                    "1 sendok teh gula merah (opsional)\n +" +
+                    "6 siung bawang merah\n" +
+                    "4 siung bawang putih\n" +
+                    "2 cm jahe\n" +
+                    "2 cm kunyit\n" +
+                    "3 butir kemiri\n" +
+                    "1 sendok teh ketumbar\n" +
+                    "1-2 buah cabai merah (sesuai selera)",
+            "1. Panaskan minyak dalam wajan, tumis bumbu halus hingga harum.\n" +
+                    "2. Tambahkan daging sapi ke dalam wajan, aduk hingga daging berubah warna.\n" +
+                    "3. Tuang santan, masukkan serai, daun jeruk, dan daun salam. Aduk rata.\n" +
+                    "4. Tambahkan garam, merica, dan gula merah (jika menggunakan). Masak dengan api kecil hingga daging empuk dan bumbu meresap.\n" +
+                    "5. Angkat dan sajikan gulai daging panas dengan nasi putih."
+        ),
+        Recipe(
+            R.drawable.rendang,
+            "Rendang",
+            "1 kg daging sapi (bagian sandung lamur atau brisket), potong dadu\n" +
+                    "1 liter santan (dari 1 butir kelapa)\n" +
+                    "4-5 lembar daun jeruk\n" +
+                    "3-4 lembar daun salam\n" +
+                    "2 batang serai, memarkan\n" +
+                    "1-2 cm lengkuas, memarkan\n" +
+                    "1 sendok makan asam kandis (atau asam jawa)\n" +
+                    "Garam secukupnya\n" +
+                    "Gula merah secukupnya (secukupnya)\n +" +
+                    "10 siung bawang merah\n" +
+                    "6 siung bawang putih\n" +
+                    "3 cm jahe\n" +
+                    "3 cm kunyit\n" +
+                    "5 butir kemiri\n" +
+                    "1 sendok teh ketumbar\n" +
+                    "2-3 buah cabai merah besar (atau sesuai selera)\n" +
+                    "3-5 buah cabai rawit (opsional, sesuai selera)",
+            "1. Haluskan semua bumbu halus, lalu tumis dengan sedikit minyak hingga harum.\n" +
+                    "2. Tambahkan potongan daging ke dalam wajan, aduk rata hingga daging berubah warna.\n" +
+                    "3. Tuang santan, masukkan daun jeruk, daun salam, serai, dan lengkuas. Aduk rata.\n" +
+                    "4. Tambahkan garam, gula merah, dan asam kandis. Masak dengan api kecil hingga daging empuk dan bumbu meresap, aduk sesekali.\n" +
+                    "5. Terus masak hingga kuah menyusut dan bumbu menyatu, biasanya sekitar 2-3 jam.\n" +
+                    "6. Angkat dan sajikan rendang panas dengan nasi putih."
+        ),
+        Recipe(
+            R.drawable.sop_buntut,
+            "Sop Buntut",
+            "500 gram Buntut sapi\n" +
+                    "2 liter air\n" +
+                    "1 sdt garam\n" +
+                    "1/2 sdt merica bubuk\n" +
+                    "1 sdt kaldu bubuk rasa sapi\n" +
+                    "Secukupnya bawang goreng\n" +
+                    "Secukupnya jeruk nipis\n" +
+                    "Secukupnya cabai rawit\n +" +
+                    "3 batang daun bawang\n" +
+                    "10 butir kapulaga\n" +
+                    "8 butir Bunga lawang\n" +
+                    "4 butir cengkeh\n" +
+                    "1 butir pala\n" +
+                    "1 jari kayu manis\n" +
+                    "10 butir lada hitam\n" +
+                    "8 siung bawang merah\n" +
+                    "6 siung bawang putih\n +" +
+                    "2 buah kentang\n" +
+                    "2 buah wortel\n" +
+                    "1 buah tomat\n" +
+                    "1 batang daun bawang\n" +
+                    "2 batang daun seledri",
+                    "1. Siapkan Buntut sapi cuci bersih Kemudian sisihkan, lalu Siapkan bahan bumbu rempah sisihkan dalam wadah. Kemudian rebus Buntut sapi bersama 2 liter air, tambahkan garam, merica dan kaldu bubuk, rebus sampai mendidih.\n" +
+                    "2. Kemudian masukan semua bahan bumbu rempah, rebus sampai Buntut empuk. Lama merebus kira-kira 1 jam atau sampai empuk. Sambil menunggu buntut empuk siapkan bahan sayuran seperti kentang, wortel, daun bawang, sledri dan tomat, potong-potong sesuai selera dan sisihkan.\n" +
+                    "3. Lalu siapkan juga jeruk nipis dan cabai rawit potong sesuai selera. Lalu cek buntut sapi yang di rebus, setelah matang angkat beserta bahan rempah nya, atau bisa di saring sisahkan kuah nya saja.\n" +
+                    "4. Kemudian masukan kembali buntut kedalam kuah dan rebus kembali sampai benar-benar empuk tambahkan bawang goreng sesuai selera. Kemudian masukan potongan kentang dan wortel, masak sampai sayuran empuk. Koreksi rasa setelah di rasa cukup matikan api, angkat dan sajikan dalam mangkuk tambahkan daun bawang, daun seledri air jeruk nipis dan cabai sesuai selera."
         )
     )
 }

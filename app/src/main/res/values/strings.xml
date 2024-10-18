@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Cook Helper</string>
     <string name="promptText">"Bahan apa saja yang tersedia di gambar ini?, dan juga berikan aku resep berdasarkan bahan-bahan dari gambar diatas dan cara membuatnya"</string>
+    <string name="our_team">"1. 202143500170 Muhamad Afik Agiesta - R7B
+2. 202143500259 Rama Adji Prasetyo - R7B
+3. 202143502613 Muhamad Naufal - R7B
+4. 202143500249 Rizky Agung Setiawan Rifanny - R7B
+5. 202143500306 Fadil Afriza Wiyono - R7B
+6. 202143500209 Tio Rangga Yudhistira - R7B
+7. 202143502654 Ariq Andrean - S7D
+8. 202143502653 Wahyu Prasetiyo - S7D"</string>
 </resources>

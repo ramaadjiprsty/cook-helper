@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/foodbg">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -10,10 +11,14 @@
         android:layout_margin="8dp"
         android:orientation="vertical">
 
-        <ImageView
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/iv_recipe_detail"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:layout_marginHorizontal="20dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp"
+            app:shapeAppearance="@style/RoundedImageView"
             android:scaleType="centerCrop" />
 
         <TextView
@@ -33,6 +38,7 @@
             android:id="@+id/tv_recipe_instructions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
     </LinearLayout>
 </ScrollView>

@@ -8,7 +8,11 @@
         android:id="@+id/findRecipeFragment"
         android:name="com.example.cookhelper.views.findrecipe.FindRecipeFragment"
         android:label="fragment_find_recipe"
-        tools:layout="@layout/fragment_find_recipe" />
+        tools:layout="@layout/fragment_find_recipe" >
+        <action
+            android:id="@+id/action_findRecipeFragment_to_resultRecipeFragment"
+            app:destination="@id/resultRecipeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/getRecipeFragment"
         android:name="com.example.cookhelper.views.getrecipe.GetRecipeFragment"
@@ -36,4 +40,21 @@
             android:name="instructions"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/resultRecipeFragment"
+        android:name="com.example.cookhelper.views.resultrecipe.ResultRecipeFragment"
+        android:label="ResultRecipeFragment"
+        tools:layout="@layout/fragment_result_recipe">
+        <argument
+            android:name="image"
+            app:argType="string" />
+        <argument
+            android:name="resultText"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.cookhelper.views.about.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
 </navigation>
